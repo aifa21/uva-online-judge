@@ -65,7 +65,7 @@ int main()
             if (s.size() > mn && func(s))
             {
                 mn = s.size();
-                longwords.clear();
+                longwords.clear();//let first max=4 then if we get max=5 then erase previous word
                 longwords.insert(s);
             }
             else if (s.size() == mn && func(s))
